@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central City Football Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="logo"></i>CENTRAL CITY<span>FOOTBALL CLUB</span></a>
+            </div>
+          <nav class="nav">
+            <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav__links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="registration.html">Registration</a></li> <!-- Updated link -->
+                    <li><a href="payment.html">Payment</a></li> <!-- Added link -->
+                </ul>
+                </ul>
+                </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section home">
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>Welcome to Central City Football Club</h2>
+                    <p>Your home for all things football in Central City.</p>
+                    <a href="#about" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Central City Football Club was established in [Year] and has been dedicated to promoting football in Central City ever since.</p>
+            </div>
+        </section>
+
+        <section id="team" class="section team">
+            <div class="container">
+                <h2>Our Team</h2>
+                <p>Meet the players who make up the heart and soul of Central City FC.</p>
+                <!-- Add player profiles here -->
+            </div>
+        </section>
+
+        <section id="schedule" class="section schedule">
+            <div class="container">
+                <h2>Schedule</h2>
+                <p>Check out our upcoming matches and events.</p>
+                <!-- Add schedule details here -->
+            </div>
+        </section>
+
+        <section id="news" class="section news">
+            <div class="container">
+                <h2>Latest News</h2>
+                <p>Stay updated with the latest news and updates from Central City FC.</p>
+                <!-- Add news articles here -->
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Get in touch with Central City Football Club.</p>
+                <form action="submit_form.php" method="post" class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <ul class="nav__socials">
+        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+    </ul>
+
+        <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Central City Football Club. All rights reserved.</p>
+        </div>
+    </footer>
+     <script>
+        // JavaScript to handle mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav__links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

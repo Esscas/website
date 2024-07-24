@@ -1,0 +1,569 @@
+/* Basic reset and styling */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Container styling */
+.container {
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Header styling */
+.header {
+    background: #7ed5eb;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo {
+    font-size: 30px;
+    text-align: right;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0;
+}
+
+header .logo:hover {
+    color: rgb(55, 55, 112);
+    transition: all 0.3s ease;
+}
+
+header .logo span {
+    color: #161718;
+    font-size: 30px;
+}
+
+header .logo span:hover {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav__links {
+    display: flex;
+
+}
+
+.nav__links li {
+    margin-left: 20px;
+}
+
+.nav__links a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* Mobile menu toggle styling */
+.navbar__toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+
+.navbar__toggle .bar {
+    height: 4px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Home section styling */
+.home {
+    position: relative;
+    background: url('images/1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #e7e7fafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #75c0f1;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #2b45d6;
+}
+
+/* Social media links styling */
+.nav__socials, .footer__socials {
+    display: flex;
+    list-style: none;
+}
+
+.nav__socials li, .footer__socials li {
+    margin-left: 15px;
+}
+
+.nav__socials a, .footer__socials a {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+
+/* Section styling */
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section p {
+    text-align: center;
+}
+
+/* Footer styling */
+.footer {
+    background: #44d1db;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Registration form styling */
+.registration {
+    padding: 60px 0;
+}
+
+.registration h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.registration-form input,
+.registration-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-form button {
+    padding: 10px 20px;
+    background: #ff5a5f;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.registration-form button:hover {
+    background: #ff787c;
+}
+
+/* Payment form styling */
+.payment {
+    padding: 30px 0;
+}
+
+.payment form {
+    max-width: 600px;
+    margin: auto;
+
+}
+
+.payment label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.payment input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.payment button {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    background: #0779e4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.payment button:hover {
+    background: #055ba6;
+}
+    /* Responsive styling */
+@media (max-width: 768px) {
+    
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styling */
+.header {
+    background: #3a5779;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header h1 {
+    text-align: center;
+    margin-right: 50px;
+    font-size: 30px;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header .logo:hover {
+    color: rgb(55, 55, 112);
+    transition: all 0.3s ease;
+}
+
+header .logo span {
+    color: #161718;
+    font-size: 30px;
+}
+
+header .logo span:hover {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav__links {
+    display: flex;
+
+}
+
+.nav__links li {
+    margin-left: 20px;
+}
+
+.nav__links a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* Mobile menu toggle styling */
+.navbar__toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+
+.navbar__toggle .bar {
+    height: 4px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+header .logo {
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header .logo:hover {
+    color: rgb(55, 55, 112);
+    transition: all 0.3s ease;
+}
+
+header .logo span {
+    color: #161718;
+    font-size: 25px;
+}
+
+header .logo span:hover {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Social media links styling */
+.nav__socials, .footer__socials {
+    display: flex;
+    list-style: none;
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+    align-items: center;
+}
+
+.nav__socials li, .footer__socials li {
+    margin-left: 15px;
+}
+
+.nav__socials a, .footer__socials a {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+   
+    .nav__links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav__links.active {
+        display: flex;
+    }
+
+    .navbar__toggle {
+        display: flex;
+    }
+
+    .nav__links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+    
+/* Social media links styling */
+.nav__socials, .footer__socials {
+    display: flex;
+    list-style: none;
+}
+
+.nav__socials li, .footer__socials li {
+    margin-left: 15px;
+}
+
+.nav__socials a, .footer__socials a {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+
+/* Section styling */
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section p {
+    text-align: center;
+}
+
+/* Footer styling */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Registration form styling */
+.registration {
+    padding: 60px 0;
+}
+
+.registration h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.registration-form input,
+.registration-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-form button {
+    padding: 10px 20px;
+    background: #ff5a5f;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.registration-form button:hover {
+    background: #ff787c;
+}
+
+/* Payment form styling */
+.payment {
+    padding: 30px 0;
+}
+
+.payment form {
+    max-width: 600px;
+    margin: auto;
+
+}
+
+.payment label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.payment input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.payment button {
+    display: block;
+    width: 20%;
+    padding: 10px;
+    background: #0779e4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.payment button:hover {
+    background: #055ba6;
+}
+
+/* Home section styling */
+.home {
+    position: relative;
+    background: url(images/1.jpg) no-repeat center center/cover;
+    height: 30vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+
+}
